@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Proza+Libre&display=swap');
+
+
+.show-btn {
+  color: #007c89;
+}
+
+.form-submit-button {
+    background-color: white;
+    color: rgba(36,28,21,0.65);
+    border: 1px solid rgba(36,28,21,0.65);
+    font-size: 14px!important;
+    font-weight: bold;
+    padding: 10px;
+    width: 30%!important;
+}
+
+
+.form-submit-button:hover {
+    background-color: #007c89;
+    color: white;
+}
+
+.header {
+    font-family: 'Merriweather', serif;
+    font-size: 34px;
+    word-spacing: -0.2rem;
+    line-height: 1.1;
+    color: #241c15;
+  }
+
+.flex-container {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 12px;
+    color: #241c15;
+    word-spacing: 0.1rem;
+  }
+  
+.flex-container > div {
+    background-color: #ffffff;
+  }
+  
+.header > div {
+      text-align: left;
+      font-size: 34px;
+      font-family: arial;
+  }
+
+.item2 {
+  justify-content: center;
+}
+
+.item1 {
+  width: 100%; 
+  text-align: center;
+}
+
+.item1 > img {
+  display: none;
+  width: 120px;
+  }
+
+.item2 > img {
+    width: 120px;
+  }
+  
+.grid-container {
+    background-color: rgba(255, 255, 255, 0);
+    justify-content: center;
+  }
+  
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+    font-size: 16px;
+  }
+
+.content {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 12px;
+    color: #241c15;
+  }
+
+.small-font {
+      font-size: 11px;
+      color: rgba(36,28,21,0.65);
+      margin-left: 2px;
+  }
+
+  .center {
+    margin: auto;
+    padding: 10px;
+    display: flex;
+  }
+
+  .right-align {
+    justify-content: right; 
+    display: block;
+    text-align: right;
+    align-content: right;
+  }
+
+  .left-align {
+    position: absolute;
+    justify-content: left; 
+    display: inline-block;
+    text-align: left;
+    align-content: left;
+  }
+  
+@media (min-width: 1200px) {
+  .content {
+      width: 100%;
+      padding: 10px;
+    }
+
+  .flex-container {
+        width: 100%;
+        margin: auto 0;
+    }
+
+  .grid-container {
+        width: 70%;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+    }
+  .item1 > img {
+    display: none;
+  }
+
+}
+
+
+@media screen and (max-width: 1199px) {
+  .content {
+    width: 100%;
+    padding: 10px;
+  }
+
+.flex-container {
+      width: 100%;
+      margin: auto 0;
+  }
+
+.grid-container {
+      width: 100%;
+      justify-content: center;
+      justify-items: center;
+      align-content: center;
+  }
+
+.item2 > img{
+  display: none;
+}
+.item1 > img{
+  display: inline-flex;
+}
+.center {
+  margin: 0 auto;
+  padding: 10px;
+  display: inline;
+}
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .content {
+    width: 100%;
+    padding: 10px;
+  }
+
+.flex-container {
+      width: 100%;
+      margin: auto 0;
+  }
+
+.grid-container {
+      width: 100%;
+      justify-content: center;
+      justify-items: center;
+      align-content: center;
+  }
+  .item2 > img {
+    display: none;
+  }
+  .item1 > img {
+    display: inline-flex;
+  }
+  .center {
+    margin: 0 auto;
+    padding: 10px;
+    display: inline;
+  }
+}
